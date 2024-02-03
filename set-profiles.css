@@ -1,0 +1,46 @@
+main {
+    text-align: center;
+    margin-top: 13rem;
+    display: flex;
+    justify-content: center;
+}
+
+.player-card {
+    background-color: white;
+    width: 20%;
+    height: 13rem;
+    border-radius: 5px;
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.2);
+    margin-right: 3rem;
+}
+
+.player-card span {
+    display: block;
+    font-size: 4rem;
+    margin-bottom: 1rem;
+}
+
+.player-card p {
+    display: inline-block;
+    font-size: 1.5rem;
+    margin-right: 1rem;
+}
+
+.player-card a {
+    text-decoration: none;
+    color : var(--main-color-800-);
+}
+
+.player-card a:hover {
+    color : var(--main-color-600-);
+}
+
+#player-1-id {
+    display: inline-block;
+    color : var(--main-color-600-);
+}
+
+#player-2-id {
+    display: inline-block;
+    color : var(--main-color-600-);
+}
