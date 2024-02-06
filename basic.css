@@ -12,6 +12,10 @@ html {
     font-family: 'Bitter', serif;
 }
 
+body {
+    margin: 0;
+}
+
 h1 {
     font-weight: 400;
     margin-top: 14rem;
@@ -29,3 +33,19 @@ h1 span {
     color : var(--color-grey-800-);
 }
 
+.start-button {
+    text-decoration: none;
+    font-size: 1.5rem;
+    border: 1px none var(--main-color-600-);
+    border-radius: 3px;
+    padding: 0.8rem 1.3rem;
+    background-color: var(--main-color-600-);
+    color: white;
+    display: inline-block;
+    margin-top: 3rem;
+    transition: background-color 0.2S ease-out;
+}
+
+.start-button:hover {
+    background-color: var(--main-color-800-);
+}
