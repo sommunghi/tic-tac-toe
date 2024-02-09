@@ -31,6 +31,8 @@ function changeName (index) {
         inputField.style.backgroundColor = "#f081aa";
     }
     else {
+        if (index == 0) localStorage.setItem("name1", player[0].inputField.value);
+        else localStorage.setItem("name2", player[1].inputField.value);
         player[index].nameElement.textContent = inputField.value;
         inputField.style.backgroundColor = "white";
         removePage(index);
@@ -42,5 +44,3 @@ for (let i = 0; i < player.length; i++) {
     player[i].confirmButton.addEventListener("click", () => changeName(i));
     player[i].cancelButton.addEventListener("click", () => removePage(i));
 }
-
-
